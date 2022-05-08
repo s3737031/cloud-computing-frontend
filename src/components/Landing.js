@@ -10,7 +10,7 @@ class Landing extends Component {
 
     componentDidMount() {
         //View all products
-        axios.get('https://v78n3a4r2b.execute-api.us-east-1.amazonaws.com/production/laptop-microservice')
+        axios.get('https://cors-everywhere.herokuapp.com/https://v78n3a4r2b.execute-api.us-east-1.amazonaws.com/production/laptop-microservice')
         .then(res => {
             const laptops = res.data;
             this.setState( { laptops });
